@@ -1,4 +1,5 @@
 # usage
+```ts
 const date = new Date();
 date.setDate(date.getDate() + 2);
 class A {
@@ -12,3 +13,4 @@ const a = new A();
 a.test(2); // Output 2 from function
 a.test(2); // Output 2 from cache
 a.test(2); // Output 2 from cache
+```
