@@ -8,8 +8,8 @@ export const cacheReturn = (cacheTTL: number) => (target: any, name: string, des
     } else {
       const returnValue = fn.apply(this, args);
       cache[key] = {
-	returnValue,
-	cacheDate: Date.now(),
+        returnValue,
+        cacheDate: Date.now(),
       }
       return returnValue;
     }
