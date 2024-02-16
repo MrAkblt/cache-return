@@ -1,7 +1,5 @@
 # usage
 ```ts
-const date = new Date();
-date.setDate(date.getDate() + 2);
 class A {
   @cacheReturn(2 * 24 * 60 * 60 * 1000) // 2 days
   test(x) {
