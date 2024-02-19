@@ -1,7 +1,7 @@
 # usage
 ```ts
 class A {
-  @cacheReturn(2 * 24 * 60 * 60 * 1000) // 2 days
+  @cacheReturn({ cacheTTL: 2 * 24 * 60 * 60 * 1000 }) // 2 days
   test(x) {
     return new Promise((res) => setTimeout(() => res(x), 1000))
   }
